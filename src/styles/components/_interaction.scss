@@ -1,0 +1,152 @@
+$backCol: #252329;
+$basicColor: #e0e0e0;
+$basicDarkcolor: #828282;
+
+.interactions {
+    width: 71%;
+    background: $backCol;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .head {
+        height: 44.92px;
+        box-shadow: 0px 4px 4px #00000040;
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        padding: 0 50px;
+        .menuBar {
+            width: 18px;
+            height: 12px;
+            position: relative;
+            margin-right: 10px;
+            display: none;
+            img {
+                position: absolute;
+                top: 3px;
+            }
+        }
+    }
+
+    p,
+    .title,
+    .retitle,
+    h3 {
+        color: $basicColor;
+        p {
+            font-size: 0.8em;
+        }
+    }
+    .ProfileName {
+        color: #828282;
+        font-size: 0.8em;
+        margin-left: 3px;
+    }
+    .RealProfileName {
+        font-weight: bold;
+    }
+    .FakeProfileName {
+        font-size: 0.7em;
+        position: relative;
+        top: 2px;
+    }
+    .form {
+        padding: 0 50px;
+        width: 87%;
+        position: absolute;
+        bottom: 33px;
+        form {
+            width: 100%;
+            height: 100%;
+            background: #3c393f;
+            border-radius: 11px;
+            .input {
+                width: 88%;
+                height: 100%;
+                background: transparent;
+                padding: 15px 13px;
+            }
+            .SubmitButton {
+                position: absolute;
+                width: 37.34px;
+                top: 4.5px;
+                height: 36.34px;
+                right: 56px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+                .submit {
+                    width: 100%;
+                    background: #2f80ed;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    transition: opacity 0.2s;
+                    border-radius: 8px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    .messages {
+        padding: 0 50px;
+        overflow-y: auto;
+        height: 66vh;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.435);
+            outline: 1px solid slategrey;
+        }
+        .message {
+            display: flex;
+            margin-bottom: 15px;
+            .image {
+                height: 100%;
+                margin-top: 11px;
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 7px;
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 16px;
+                .details {
+                    display: flex;
+                    .FakeProfileName{
+                        font-size: 0.7em;
+                        position: relative;
+                        top: 2px;
+                        margin-left: 13px;
+                    }
+                }
+                .content {
+                    position: relative;
+                    bottom: 5px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

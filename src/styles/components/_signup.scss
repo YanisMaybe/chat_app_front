@@ -1,0 +1,94 @@
+
+.signup {
+    background-color: #2a323c;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: $background;
+    p,
+    label {
+        color: rgba(255, 255, 255, 0.571);
+    }
+    h2 {
+        color: white;
+    }
+    .signinBloc {
+        background: #323c48;
+        border-radius: 2px;
+        width: 100%;
+        max-width: 330px;
+        margin: auto;
+        padding: 5px 14px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        .header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .logo {
+                display: flex;
+                height: 55px;
+            }
+            .logo img {
+                width: 37px;
+                height: 37px;
+                position: relative;
+                top: 3vh;
+                margin-right: 7px;
+            }
+        }
+        .theDetails {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7em;
+            .secondProp {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-top: 3px;
+
+                a {
+                    color: #9ea6ffcc;
+                }
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 13px;
+
+            .submitButton {
+                background: #04a2b3;
+                border: 0;
+                outline: none;
+                color: white;
+                padding: 12px 0;
+                border-radius: 1px;
+                margin-top: 8vh;
+                transition: opacity 0.2s;
+            }
+            .secondEditionForFirstInputs {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 22vh;
+                .inpt {
+                    outline: none;
+                    background: $inputColor;
+                    border: 1px solid #3e4a59;
+                    padding: 8px 10px;
+                    border-radius: 2.5px;
+                    color: rgba(255, 255, 255, 0.639);
+                }
+            }
+        }
+    }
+}
+
+.signup .errorMessage{
+    color: $errormessage;
+}

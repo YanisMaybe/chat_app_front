@@ -1,0 +1,191 @@
+@media screen and (max-width: 985px) {
+    .channels {
+        .content {
+            position: relative;
+            top: 76px;
+            padding: 0 14px;
+
+            .search {
+                position: relative;
+                height: 43px;
+                width: 89%;
+                margin-bottom: 28px;
+            }
+        }
+    }
+    .HomePage {
+        .channelsLeftPart {
+            transform: translateX(0);
+        }
+    }
+}
+@media screen and (max-width: 810px) {
+    .channels {
+        .head {
+            padding: 0 15px;
+        }
+        .content {
+            .search {
+                width: 74%;
+            }
+        }
+    }
+    .interactions {
+        .head,
+        .messages,
+        .form {
+            padding: 0 30px;
+        }
+        .form {
+            form .SubmitButton {
+                position: absolute;
+                width: 37.34px;
+                top: 4.5px;
+                height: 36.34px;
+                right: 10px;
+            }
+        }
+    }
+}
+@keyframes channelsLeftPartToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes channelsLeftPartToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media screen and (max-width: 632px) {
+    .HomePage {
+        .channelsLeftPartToRight {
+            animation: channelsLeftPartToRight 0.2s linear forwards;
+        }
+        .channelsLeftPartToLeft {
+            animation: channelsLeftPartToLeft 0.2s linear forwards;
+        }
+        .createChannelZone .createChannelBloc {
+            width: 44vh;
+            height: 42.4vh;
+        }
+        .createChannelZone .createChannelBloc .inputs form textarea {
+            max-width: 100%;
+            font-family: Poppins, "sans-serif";
+            width: auto;
+        }
+        height: 100vh;
+        .channelsLeftPart {
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            width: 84%;
+            transform: translate(-100%);
+            .profile {
+                .right,
+                .img {
+                    display: none;
+                }
+            }
+            .channels {
+                .head {
+                    padding: 0;
+                    width: 100%;
+                    h3 {
+                        margin-left: 15px;
+                    }
+                    .more {
+                        position: relative;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+        .interactions {
+            width: 100%;
+            .head,
+            .form,
+            .messages {
+                padding: 0 18px;
+            }
+            .head {
+                .menuBar {
+                    display: block;
+                }
+            }
+            .form {
+                width: 88%;
+                position: absolute;
+                bottom: 33px;
+
+                form {
+                    .SubmitButton {
+                        position: absolute;
+                        width: 37.34px;
+                        top: 4.5px;
+                        height: 36.34px;
+                        right: -2px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@media screen and (max-width: 445px) {
+   
+    .HomePage .interactions {
+        .form {
+            width: 84%;
+            position: absolute;
+            bottom: 33px;
+        }
+    }
+    .interactions .messages {
+        padding: 0 50px;
+        overflow-y: auto;
+        height: 70vh;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+    .channel .head {
+        height: 44.92px;
+    }
+}
+@media screen and (max-width: 342px) {
+    .HomePage .interactions {
+        .ProfileName {
+            color: #828282;
+            font-size: 0.7em;
+            margin-left: 3px;
+        }
+        .FakeProfileName {
+            font-size: 0.5em;
+            position: relative;
+            top: 6px;
+            right: 10px;
+        }
+    }
+    .HomePage .interactions .form {
+        width: 81%;
+        position: absolute;
+        bottom: 33px;
+    }
+}
+@media screen and (max-width: 295px) {
+    .HomePage .interactions {
+        .FakeProfileName {
+            font-size: 0.5em;
+            position: relative;
+            top: 6px;
+            right: -3px;
+        }
+    }
+}

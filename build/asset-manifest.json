@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b6e958f.chunk.css",
+    "main.js": "/static/js/main.cff22c7c.chunk.js",
+    "main.js.map": "/static/js/main.cff22c7c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6ba6d619.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6ba6d619.js.map",
+    "static/js/2.6208bc45.chunk.js": "/static/js/2.6208bc45.chunk.js",
+    "static/js/2.6208bc45.chunk.js.map": "/static/js/2.6208bc45.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1b6e958f.chunk.css.map": "/static/css/main.1b6e958f.chunk.css.map",
+    "static/js/2.6208bc45.chunk.js.LICENSE.txt": "/static/js/2.6208bc45.chunk.js.LICENSE.txt",
+    "static/media/buttom-arrow.fc2c79f5.svg": "/static/media/buttom-arrow.fc2c79f5.svg",
+    "static/media/close.014ed855.svg": "/static/media/close.014ed855.svg",
+    "static/media/exit.95c09be5.svg": "/static/media/exit.95c09be5.svg",
+    "static/media/left-arrow.62bb2cc9.svg": "/static/media/left-arrow.62bb2cc9.svg",
+    "static/media/loupe.08621295.svg": "/static/media/loupe.08621295.svg",
+    "static/media/menu.468ed9ae.svg": "/static/media/menu.468ed9ae.svg",
+    "static/media/mountains.80e2ffa8.svg": "/static/media/mountains.80e2ffa8.svg",
+    "static/media/padlock.b04be2ee.svg": "/static/media/padlock.b04be2ee.svg",
+    "static/media/plus.3a1630eb.svg": "/static/media/plus.3a1630eb.svg",
+    "static/media/send.58004225.svg": "/static/media/send.58004225.svg",
+    "static/media/user.d8ac2647.svg": "/static/media/user.d8ac2647.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ba6d619.js",
+    "static/js/2.6208bc45.chunk.js",
+    "static/css/main.1b6e958f.chunk.css",
+    "static/js/main.cff22c7c.chunk.js"
+  ]
+}
