@@ -90,7 +90,7 @@ const Interaction = () => {
                         dispatch(addMessageToChannel({...info,_id:actuallyChannel._id,user:actuallyUser}))
                         document.querySelector(".messages").scrollTop = document.querySelector(".messages").scrollHeight;
                         /**
-                        axios.post(`http://localhost:4000/api/addmessagetochannel/${actuallyChannel._id}`, info).then(res => {
+                        axios.post(`https://chatappback.onrender.com/api/addmessagetochannel/${actuallyChannel._id}`, info).then(res => {
                             if (res.data) {
                                 if (res.data.error) {
                                     console.error(res.data.error)
@@ -139,7 +139,7 @@ const Interaction = () => {
                                 dispatch(addMessageToChannel({...info,_id:actuallyChannel._id,actuallyUser}))
                                 document.querySelector(".messages").scrollTop = document.querySelector(".messages").scrollHeight;
                                 /*
-                                axios.post(`http://localhost:4000/api/addmessagetochannel/${actuallyChannel._id}`, info).then(res => {
+                                axios.post(`https://chatappback.onrender.com/api/addmessagetochannel/${actuallyChannel._id}`, info).then(res => {
                                     if (res.data) {
                                         if (res.data.error) {
                                             console.error(res.data.error)

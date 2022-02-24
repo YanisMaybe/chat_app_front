@@ -41,7 +41,7 @@ const HomePage = () => {
         };
     })();
     const logout = ()=>{
-        axios.get("http://localhost:4000/auth/logout").then(res=>{
+        axios.get("https://chatappback.onrender.com/auth/logout").then(res=>{
             if(res){
                 document.cookie = '__user=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
                 window.location.reload()
