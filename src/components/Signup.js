@@ -15,7 +15,7 @@ const Signup = () => {
         e.target[3].disabled = true
         e.target[3].classList.add("disabled")
 
-        axios.post('http://localhost:4000/auth/signup', data).then(res => {
+        axios.post('https://chatappback.onrender.com/auth/signup', data).then(res => {
             console.log(res)
             e.target[3].disabled = false
             e.target[3].classList.remove("disabled")

@@ -6,7 +6,7 @@ export const CHANGE_USER_PICTURE = "CHANGE_USER_PICTURE";
 
 export const getAllUsers = () => {
     return dispatch => {
-        axios.get("http://localhost:4000/auth/getallusers").then(res => {
+        axios.get("https://chatappback.onrender.com/auth/getallusers").then(res => {
             if (res) {
                 return dispatch({ type: GET_USERS, payload: res.data })
             } else {
@@ -20,7 +20,7 @@ export const getAllUsers = () => {
 }
 export const getOneUser = id => {
     return dispatch => {
-        axios.get(`http://localhost:4000/auth/getoneuser/${id}`).then(res => {
+        axios.get(`https://chatappback.onrender.com/auth/getoneuser/${id}`).then(res => {
             if (res.data) {
                 return dispatch({ type: GET_ONE_USER, payload: res.data })
             } else {
@@ -43,7 +43,7 @@ export const changeUserPicture = (id, image,channelId) => {
         console.log(image)
         axios({
             method: "post",
-            url: "http://localhost:4000/api/editpicture",
+            url: "https://chatappback.onrender.com/api/editpicture",
             data: formData,
             headers: { "Content-Type": "multipart/form-data" },
           }).then(res => {
@@ -51,7 +51,7 @@ export const changeUserPicture = (id, image,channelId) => {
                 console.error(res.data.error)
             } else {
                 console.log(image)
-                return dispatch({ type: CHANGE_USER_PICTURE, payload: `http://localhost:4000/images/${id}.jpg` })
+                return dispatch({ type: CHANGE_USER_PICTURE, payload: `https://chatappback.onrender.com/images/${id}.jpg` })
             }
         }).catch(err => {
             console.error(err)

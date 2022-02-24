@@ -9,7 +9,7 @@ export const ADD_USER_TO_CHANNEL = "ADD_USER_TO_CHANNEL";
 
 export const getAllChannels = () => {
     return dispatch => {
-        axios.get("http://localhost:4000/api/getAllChannels").then(res => {
+        axios.get("https://chatappback.onrender.com/api/getAllChannels").then(res => {
             if (res) {
                 return dispatch({ type: GET_CAHNNELS, payload: res.data })
             } else {
@@ -22,7 +22,7 @@ export const getAllChannels = () => {
 }
 export const getOneChannel = (id) => {
     return dispatch => {
-        axios.get(`http://localhost:4000/api/getOneChannel/${id}`)
+        axios.get(`https://chatappback.onrender.com/api/getOneChannel/${id}`)
             .then(res => {
                 if (res) {
                     return dispatch({ type: GET_ONE_CHANNEL, payload: res.data })
@@ -41,7 +41,7 @@ export const createChannel = ({name,description,date}) => {
             description,
             date:date
         }
-        axios.post("http://localhost:4000/api/createChannel",data).then(res=>{
+        axios.post("https://chatappback.onrender.com/api/createChannel",data).then(res=>{
             if(res.data){
                 if(res.data.error){
                     console.error(res.data.error)
@@ -65,7 +65,7 @@ export const addMessageToChannel =({_id,posterId,pseudo,picture,message,user}) =
             picture,
             message
         }
-        axios.post(`http://localhost:4000/api/addmessagetochannel/${_id}`,data).then(res=>{
+        axios.post(`https://chatappback.onrender.com/api/addmessagetochannel/${_id}`,data).then(res=>{
             if(res.data){
                 if(res.data.error){
                     console.error(res.data.error)
@@ -94,7 +94,7 @@ export const addUserToChannel = ({id,memberId,pseudo,picture})=>{
             picture
         }
         
-        axios.post(`http://localhost:4000/api/addusertochannel/${id}`,data).then(res=>{
+        axios.post(`https://chatappback.onrender.com/api/addusertochannel/${id}`,data).then(res=>{
             if(res.data){
                 if(res.data.error){
                     console.error(res.data.error)
