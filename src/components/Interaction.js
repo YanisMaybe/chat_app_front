@@ -17,7 +17,7 @@ const Interaction = () => {
     const actuallyUser = useSelector(state => state.actuallyUserReducer)
     const dispatch = useDispatch()
     const [response, setResponse] = useState(actuallyChannel.messages);
-    const socket = socketIOClient.connect("http://localhost:4000");
+    const socket = socketIOClient.connect("https://chatappback.onrender.com");
 
     
 
